@@ -1,0 +1,129 @@
+html{
+    height: 99.3%;
+}
+
+body{
+    margin: 0;
+    height: 99.3%;
+    display: flex;
+    border: solid black;
+    border-width: 10px;
+    padding: 0;
+    flex-direction: row;
+}
+
+.icon{
+    width: 12%;
+    margin-top: 5px;
+}
+
+.users{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.items{
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+  
+.logo:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+  
+.logo h1 {
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.users-list{
+    width: 90%;
+    height: 70%;
+    padding: 0;
+    background-color: black;
+    border-radius: 10px;
+    overflow: auto;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.users-list::-webkit-scrollbar {
+    display: none;
+}
+
+.item-container{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5;
+    width: 98%;
+    height: 70%;
+    background-color: black;   
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search{
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 10px;
+    height: 60px;
+    font-size: 50px;
+    text-indent: 15px;
+}
+
+.items-list{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    height: 100%;
+}
+
+.users-list li{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.user-container{
+    background-color: white;
+    width: 95%;
+    text-indent: 10px;    
+    height: 78px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.pay{
+    position: absolute;
+    right: 17px;
+}
