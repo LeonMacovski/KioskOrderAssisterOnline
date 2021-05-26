@@ -185,6 +185,7 @@ body::-webkit-scrollbar {
   flex-direction: column;
   position: absolute;
   right: 40%;
+  z-index: 1000;
 }
 
 .size button {
@@ -288,5 +289,26 @@ body::-webkit-scrollbar {
   .item-container {
     margin: 0;
     height: 500px;
+  }
+
+  .item {
+    height: 150px;
+  }
+
+  .item-name {
+    position: absolute;
+    top: 1%;
+    left: 10%;
+  }
+  .size {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    z-index: 900;
+  }
+  .price-container {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
   }
 }
