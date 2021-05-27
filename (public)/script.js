@@ -124,7 +124,7 @@ var menu = [
       "Name": "Fries",
       "Prices": {
         "Normal": 50,
-        "Baken": 60,
+        "Baked": 60,
         "Seasoned": 70
       }
     },
@@ -392,6 +392,10 @@ function add_order()
     let index = orders.indexOf(orders.find(x => x.name == h1_name.innerHTML))
     orders.splice(index, 1)
     remove_btn.parentElement.parentElement.remove()
+    var sum = 0
+    for(var o of orders)
+      sum += o.price
+    document.querySelector('.total').innerHTML = 'Total: ' + sum
     update_order()
   })
 
